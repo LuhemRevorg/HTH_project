@@ -1,0 +1,4 @@
+backend/venv/
+backend/Models/myenv/lib/python3.11/site-packages/llvmlite/binding/libllvmlite.dylib
+backend/venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
+
