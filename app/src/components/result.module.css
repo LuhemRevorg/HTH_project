@@ -1,0 +1,181 @@
+
+  .mainBody {
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px;
+  }
+
+  .comments_section {
+    position: relative; /* Changed to relative for positioning */
+    width: 400px; /* Set a fixed width for centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content inside this section */
+    text-align: center;
+  }
+  
+  .ai_analysis_box {
+    width: 100%; /* Full width of the comments section */
+    height: 100px; /* Set height for the analysis box */
+    background-color: #f0f0f0; /* Light background color */
+    border: 2px solid #070707; /* Border color */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the analysis box */
+    z-index: 30;
+  }
+
+  .scrollBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    height: auto; /* Change to auto to allow the box to grow */
+    width: 800px;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  
+  .scrollbar {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 10px; /* Height of the scrollbar */
+    background-color: #e0e0e0; /* Background for scrollbar */
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 10px; /* Size of the dot */
+    height: 10px;
+    background-color: #070707; /* Dot color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .dot:hover {
+    transform: scale(1.5); /* Enlarge the dot on hover */
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 10;
+    transition: visibility 0.2s ease-in-out;
+  }
+  
+  .dot:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+  }
+  
+  .play_button {
+    margin-top: 20px; /* Space above the play button */
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .play_button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .timestamp {
+    position: absolute;
+    transform: translateY(100%);
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .scrollbar {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 10px; /* Height of the scrollbar */
+    background-color: #e0e0e0; /* Background for scrollbar */
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .timestamp:first-of-type {
+    left: 0; /* Left timestamp at the start */
+  }
+  
+  .timestamp:last-of-type {
+    right: 0; /* Right timestamp at the end */
+  }
+  
+  .summaryContainer {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for 2x2 layout */
+    justify-content: space-between; /* Distribute space between boxes */
+    margin-top: 20px; /* Space above the summary container */
+    padding: 30px; /* Increased padding for more space */
+    background-color: #f9f9f9; /* Light background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .summaryBox {
+    flex: 1 1 calc(50% - 20px); /* Two boxes per row, with space between */
+    margin: 10px; /* Space between boxes */
+    padding: 15px; /* Padding inside each box */
+    background-color: #ffffff; /* White background for boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+  }
+
+.summaryBox:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.summaryBox label {
+  font-weight: bold; /* Bold text for labels */
+  margin-bottom: 5px; /* Space below the label */
+  display: block; /* Make label block to occupy full width */
+}
+
+.summaryBox p {
+  color: #555; /* Dark grey color for text */
+  margin: 0; /* Reset margin */
+}
+
+  
+.pitchTable {
+  margin-top: 20px;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+.pitchTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pitchTable th, .pitchTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.pitchTable th {
+  background-color: #f4f4f4;
+}

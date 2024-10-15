@@ -1,0 +1,129 @@
+/* src/pages/page.module.css */
+.page {
+    background: #ffffff; /* Smooth gradient background */
+    color: #555; /* White text */
+    min-height: 100vh; /* Full height */
+    padding: 20px; /* Padding */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+}
+
+.boxContainer {
+    position: absolute;
+    min-width: 1000px;
+    display: flex; /* Use flexbox for the inner box layout */
+    top: 10%;
+    justify-content: space-around;
+}
+
+.scriptBoxes {
+    display: flex; /* Side by side layout for the script containers */
+    flex: 1; /* Allow the script boxes to grow equally */
+    justify-content: space-evenly;
+}
+
+.scriptContainer {
+    background-color: rgb(30, 30, 30); /* Light black background for script box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding */
+    flex: 1; /* Allow equal width for each box */
+    min-width: 900px;
+    margin-left: 30px;
+    margin-right: 40px;
+    color: white;
+    top: 0;
+    z-index: 2;
+    position: relative; /* Change to relative for better layout */
+    height: 400px; /* Set height to 40% of the viewport height */
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+}
+
+.scriptBox {
+    width: 100%; /* Full width */
+    height: 200px; /* Height */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    color: #ffffff; /* White text */
+    resize: none; /* Disable resize */
+}
+
+.buttonContainer {
+    display: flex; /* Flex for buttons */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.recordButton, .downloadButton {
+    background-color: #777; /* Grayscale button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.recordButton:hover, .downloadButton:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* Styles for the video container */
+.video_container {
+    position: fixed; /* Fixed position */
+    top: 60%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 100vw; /* Full width */
+    height: 250px; /* Height of the video */
+    overflow: hidden; /* Hides overflow */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.bottom_video {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height to fill the container */
+    object-fit: cover; /* Ensures the video covers the container */
+    object-position: center; /* Focus on the center of the video */
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.visualizer {
+    height: 70px;
+}
+
+.project_header {
+    font-size: 5rem; /* Adjust size for prominence */
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold; /* Make the text bold */
+    color: rgb(136, 0, 255); /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding for breathing room */
+    border-radius: 8px; /* Slightly round the corners */
+    letter-spacing: 2px; /* Space the letters for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  .project_header:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .main_text {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  
+  .purple_word {
+    color: purple;
+  }

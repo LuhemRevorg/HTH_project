@@ -1,0 +1,4 @@
+start_time,end_time,speech_pace,speaker,audio_id,zcr
+0,5.0,very fast,Speaker 1,speech,0.12076719247611464
+5,10.0,very fast,Speaker 2,speech,0.1324579518312102
+10,12.3733125,very fast,Speaker 1,speech,0.12854166666666667

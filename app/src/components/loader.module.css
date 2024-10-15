@@ -1,0 +1,34 @@
+/* The container for both particles and loader */
+.loader_container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* The particles background, which will be blurred */
+  .particle_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Apply blur effect */
+    z-index: 1; /* Place behind the loader */
+  }
+  
+  /* The loader GIF will be on top of the particles */
+  .loader_gif {
+    position: relative;
+    z-index: 20; /* Make sure the loader stays on top */
+  }
+  
+  .loader_gif img {
+    width: 500px; /* You can adjust the size of the loader GIF */
+    height: auto;
+    border-radius: 50%;
+  }
+  

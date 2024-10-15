@@ -1,0 +1,123 @@
+/* landing.module.css */
+
+.landing_page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .background_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: filter 3s ease;
+  }
+  
+  .blur_effect {
+    filter: blur(5px);
+  }
+  
+  .text_container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+    min-width: 900px;
+  }
+  
+  .text_fade_in {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  
+  .main_text {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  
+  .purple_word {
+    color: purple;
+  }
+  
+  /* Speaker section */
+  .speaker_container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  .speaker_box {
+    position: relative;
+    width: 450px;
+    height: 200px; /* Initial size of the rectangle */
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: black;
+    border: 1px solid white;
+    opacity: 0.6; /* 60% visible */
+    transition: all .5s;
+    cursor: pointer;
+  }
+  
+  .speaker_box:hover {
+    height: 350;
+    opacity: 1;
+  }
+  
+  .speaker_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Speaker label (white, centered over image) */
+  .speaker_label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .speaker_button {
+    margin-top: 12rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all .2s;
+    text-transform: uppercase;
+  }
+
+  .speaker_button:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+  }
+  
+
+  
