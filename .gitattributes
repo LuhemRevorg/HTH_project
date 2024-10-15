@@ -2,3 +2,4 @@
 * text=auto
 backend/Models/myenv/lib/python3.11/site-packages/llvmlite/binding/libllvmlite.dylib filter=lfs diff=lfs merge=lfs -text
 backend/venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib filter=lfs diff=lfs merge=lfs -text
+backend/venv/lib/python3.11/site-packages/llvmlite/binding/libllvmlite.dylib filter=lfs diff=lfs merge=lfs -text
